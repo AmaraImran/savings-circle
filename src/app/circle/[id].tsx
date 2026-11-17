@@ -61,6 +61,8 @@ export default function CircleDetail() {
       <TextInput placeholder="Phone (optional)" value={phone} onChangeText={setPhone}
         keyboardType="phone-pad" style={box} />
       <Button title="Add member" onPress={addMember} />
+      <Button title="Payments" onPress={() => router.push(`/payments/${circleId}`)} />
+        <Button title="Payout schedule" onPress={() => router.push(`/payouts/${circleId}`)} />
     </View>
   );
 }
